@@ -18,8 +18,8 @@ if __name__ == '__main__':
         article.download()
         article.parse()
         article.nlp()
-        for var in vars(article):
-            print(var)
+        """for var in vars(article):
+            print(var)"""
         apify.pushData({
             'authors': article.authors,
             'text': article.text,
