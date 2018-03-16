@@ -1,6 +1,6 @@
-FROM python:3.5
+FROM debian:8
 
-RUN apt-get install -yq python-dev libxml2-dev libxslt-dev libjpeg-dev zlib1g-dev libpng12-dev
+RUN apt-get install -yq libxml2-dev libxslt-dev libjpeg-dev zlib1g-dev libpng12-dev
 
 RUN pip3 install newspaper
 
